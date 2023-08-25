@@ -1,0 +1,36 @@
+<main>
+  <div class="container">
+    <div #right (click)="openColumn(right)" class="right" data-color="3f3732" data-open="false">
+      <div class="columnInfo">
+        <img src="../../../assets/closeColumn.svg" (click)="closeColumn(right, $event)" class="closeColumn" alt="closeColumn">
+        <p class="aboutColumnTitle">{{'about.what' | translate | uppercase}}<br>{{'about.is' | translate | uppercase}}<br>ES?</p>
+        <img class="aboutColumnNumbers" src="../../../assets/aboutNumbers/01.svg" alt="01">
+      </div>
+      <div class="columnContent">
+        <app-es></app-es>
+      </div>
+    </div>
+
+    <div #center (click)="openColumn(center)" class="center" data-color="456160" data-open="false">
+      <div class="columnInfo">
+        <img src="../../../assets/closeColumn.svg" (click)="closeColumn(center, $event)" class="closeColumn" alt="closeColumn">
+        <p class="aboutColumnTitle">{{'about.whoIs' | translate | uppercase}}<br>RICCARDO<br>CONTINI?</p>
+        <img class="aboutColumnNumbers" src="../../../assets/aboutNumbers/02.svg" alt="02">
+      </div>
+      <div class="columnContent">
+        <app-riccardo-contini></app-riccardo-contini>
+      </div>
+    </div>
+
+    <div #left (click)="openColumn(left)" class="left" data-color="a59689" data-open="false">
+      <div class="columnInfo">
+        <img src="../../../assets/closeColumn.svg" (click)="closeColumn(left, $event)" class="closeColumn" alt="closeColumn">
+        <p class="aboutColumnTitle">{{'about.why' | translate | uppercase}}<br>{{'about.the' | translate | uppercase}}<br>{{'about.arrow' | translate | uppercase}}?</p>
+        <img class="aboutColumnNumbers" src="../../../assets/aboutNumbers/03.svg" alt="03">
+      </div>
+      <div class="columnContent">
+        <app-arrow></app-arrow>
+      </div>
+    </div>
+  </div>
+</main>

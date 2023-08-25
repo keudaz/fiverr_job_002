@@ -1,0 +1,51 @@
+<main [ngClass]="{'darkModeBg':darkMode}">
+  <div class="container">
+    <div class="photoEffectContainer">
+      <div #first class="firstPhoto"
+        style="background-image: url(../../../assets/imgColored/{{firstPhotoCounter}}.jpeg);"></div>
+      <div #second class="secondPhoto"
+        style="background-image: url(../../../assets/imgColored/{{secondPhotoCounter}}.jpeg);"></div>
+      <img src="../../../assets/es_logo.svg" alt="es-logo">
+    </div>
+
+    <div class="infoContainer">
+      <div class="top">
+        <table>
+          <tr>
+            <td> <svg *ngIf="this.showOctagon" _ngcontent-sbv-c6="" id="octagon" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.05 11.05" class="octagon"><defs _ngcontent-sbv-c6=""><style _ngcontent-sbv-c6="">.cls-4 {fill: #007577;}</style></defs><g _ngcontent-sbv-c6="" id="Livello_1-2" data-name="Livello 1"><polygon [ngClass]="{'darkModeWhiteDot':darkMode}" _ngcontent-sbv-c6="" points="7.81 0 3.24 0 0 3.24 0 7.81 3.24 11.05 7.81 11.05 11.05 7.81 11.05 3.24 7.81 0" class="cls-4"></polygon></g></svg> </td>
+            <td> <p [ngClass]="{'darkModeWhiteColor':darkMode}" class="text">Index</p> </td>
+            <td> <img src="../../../assets/octagon.svg" alt="octagon_svg" class="borderedIcon"></td>
+          </tr>
+          <tr>
+            <td> <p [ngClass]="{'darkModeWhiteColor':darkMode}" class="text">{{'home.when' | translate}}</p> </td>
+            <td> <p class="big">{{ currentTime | date:'HH:mm:ss' }}</p> </td>
+          </tr>
+          <tr>
+            <td> <p [ngClass]="{'darkModeWhiteColor':darkMode}" class="text">{{'home.object' | translate}}</p> </td>
+            <td> <p class="big">{{productName | uppercase}}</p> </td>
+          </tr>
+          <tr>
+            <td> <img src="../../../assets/arrow.svg" alt="arrow_svg" class="arrow"></td>
+            <td> <p class="text">C/O<br>Riccardo Contini</p> </td>
+          </tr>
+        </table>
+      </div>
+      <div class="middle">
+        <button [ngClass]="{'pulse':darkMode}" (click)="disactiveDarkMode()" class="circle white"></button>
+        <img [ngClass]="{'onTop':darkMode}" class="arrow" src="../../../assets/arrow.svg" alt="arrow">
+        <button [ngClass]="{'pulse':!darkMode}" (click)="activeDarkMode()" class="circle green"></button>
+      </div>
+      <div class="bottom">
+        <div class="separator"></div>
+        <p class="text" >{{'home.eclipse' | translate | uppercase}}<br>{{'home.betweenTimeAndMatter' | translate | uppercase}}</p>
+        <div class="separator"></div>
+        <div class="exibition_info">
+          <p class="text">{{'home.showDescription' | translate}}</p>
+          <p [ngClass]="{'darkModeWhiteColor':darkMode}" class="text exibition_number">05</p>
+        </div>
+        <div class="photoEffectMobile"
+          style="background-image: url(../../../assets/imgColored/{{mobilePhotoCounter}}.jpeg);"></div>
+      </div>
+    </div>
+  </div>
+</main>

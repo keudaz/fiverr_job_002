@@ -1,0 +1,144 @@
+@import '../../../scss/mixins.scss';
+@import '../../../scss/var.scss';
+
+main{
+  height: calc(100vh - 50px);
+
+  .container{
+    height: 100%;
+    display: flex;
+    position: relative;
+
+    @include responsive("mobile") {
+      flex-direction: column;
+    }
+
+    .left, .center, .right{
+      width: calc(100%/3);
+      height: 100%;
+      transition: .4s ease;
+
+      position: absolute;
+
+      &[data-open="true"]{
+        border: 0;
+        width: 100%;
+        z-index: 2;
+        left: 0;
+
+        @include responsive("mobile") {
+          left: 0;
+          top: 0;
+          height: 100%;
+        }
+
+        .columnInfo .closeColumn{
+          display: block;
+        }
+
+        .columnContent{
+          display: block;
+        }
+      }
+
+      @include responsive("mobile") {
+        height: calc(100%/3);
+        width: 100%;
+      }
+
+      .columnInfo{
+        height: 100%;
+
+        padding: 15px 15px 20px 15px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        cursor: pointer;
+
+        @include responsive("mobile") {
+          flex-direction: row;
+        }
+
+        .aboutColumnNumbers{
+          width: 350px;
+
+          @include responsive("mobile") {
+            width: 130px;
+            align-self: flex-end;
+          }
+        }
+
+        .closeColumn{
+          display: none;
+          width: 50px;
+          position: absolute;
+          right: 15px;
+          top: 15px;
+        }
+      }
+
+      .columnContent{
+        display: none;
+      }
+    }
+
+    .right{
+      left: 0;
+
+      @include responsive("mobile") {
+       top: 0;
+       left: 0;
+      }
+
+      &:hover{
+        background-color: $about_darkBrown;
+      }
+
+      &[data-open="true"]{
+        background-color: $about_darkBrown;
+      }
+    }
+
+    .center{
+      left: calc(100% / 3);
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+
+      &:hover{
+        background-color: $about_green;
+      }
+
+      &[data-open="true"]{
+        background-color: $about_green;
+      }
+
+      @include responsive("mobile") {
+        border: 0;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+
+        left: 0;
+        top: calc(100% / 3);
+      }
+    }
+
+    .left{
+      left: calc(100% - calc(100%/3));
+
+      &:hover{
+        background-color: $about_lightBrown;
+      }
+
+      &[data-open="true"]{
+        background-color: $about_lightBrown;
+      }
+
+      @include responsive("mobile") {
+        top: calc(100% - calc(100%/3));
+        left: 0;
+      }
+    }
+  }
+}

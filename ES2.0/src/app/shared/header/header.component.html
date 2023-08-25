@@ -1,0 +1,19 @@
+<header [style.background-color]="headerBg" [ngClass]="{'darkModeBg':isDarkMode}">
+  <div class="header-container">
+    <div class="logo-container">
+      <img [routerLink]="['/']" src="../../../assets/es_logo.svg" alt="es-logo">
+    </div>
+
+    <nav class="header-menu">
+      <ul class="header-menu-nav">
+        <li [routerLink]="['/']" class="text">HOME</li>
+        <li [routerLink]="['/about']" class="text">ABOUT</li>
+        <li [routerLink]="['/shop']" class="text">SHOP</li>
+        <li [routerLink]="['/contact']" class="text">{{'header.contact' | translate | uppercase}}</li>
+      </ul>
+      <ul class="header-menu-translation">
+        <li *ngFor="let language of supportLanguages" [ngClass]="{'active': language == this.langInUse}" (click)="changeLanguage(language)" class="text">{{language | uppercase}}</li>
+      </ul>
+    </nav>
+  </div>
+</header>

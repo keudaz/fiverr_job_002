@@ -1,0 +1,47 @@
+@import '../../../scss/var.scss';
+@import '../../../scss/darkMode.scss';
+
+header{
+  width: 100vw;
+  padding: 15px 15px 10px 15px;
+
+  border-bottom: 1px solid black;
+
+  &.darkModeBg .active{
+    color: white;
+  }
+
+  .active{
+    color: $brand_green;
+  }
+
+  .header-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .logo-container{
+      width: 30px;
+
+      img{
+        cursor: pointer;
+      }
+    }
+
+    .header-menu{
+      display: flex;
+      column-gap: 20px;
+
+      ul{
+        list-style: none;
+
+        display: flex;
+        column-gap: 10px;
+
+        li{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

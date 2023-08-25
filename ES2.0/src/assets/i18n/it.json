@@ -1,0 +1,20 @@
+{
+  "header" : {
+    "contact" : "contatti"
+  },
+  "home" : {
+    "when": "Quando",
+    "object": "Oggetti",
+    "eclipse": "eclissi",
+    "betweenTimeAndMatter": "tra tempo e materia",
+    "showDescription": "Alla ricerca dello Spirito della Natura in ognuno di noi, ES offre una selezione di gioielli unici fatti in oro etico e l'anteprima della nuova collezione 'Eclissi tra Tempo e materia'."
+  },
+  "about": {
+    "what": "cosa",
+    "is": "é",
+    "whoIs": "chi è",
+    "why": "perché",
+    "the": "la",
+    "arrow": "freccia"
+  }
+}

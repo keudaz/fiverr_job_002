@@ -1,0 +1,20 @@
+{
+  "header" : {
+    "contact" : "contact"
+  },
+  "home" : {
+    "when": "When",
+    "object": "Object",
+    "eclipse": "eclipse",
+    "betweenTimeAndMatter": "between time and matter",
+    "showDescription": "In search of the Spirit of Nature in each of us, ES offers a selection of unique jewels made of ethical gold and the preview of the new collection 'Eclissi tra Tempo e materia."
+  },
+  "about": {
+    "what": "what",
+    "is": "is",
+    "whoIs": "who is",
+    "why": "why",
+    "the": "the",
+    "arrow": "arrow"
+  }
+}

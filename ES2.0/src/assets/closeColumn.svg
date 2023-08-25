@@ -1,0 +1,24 @@
+<svg _ngcontent-xpj-c13="" _ngcontent-hld-c27="" id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 47.33 46.07">
+  <defs _ngcontent-xpj-c13="" _ngcontent-hld-c27="">
+    <style _ngcontent-xpj-c13="" _ngcontent-hld-c27="">
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+    </style>
+  </defs>
+  <g _ngcontent-xpj-c13="" _ngcontent-hld-c27="" id="Livello_1-2" data-name="Livello 1">
+    <path _ngcontent-xpj-c13="" _ngcontent-hld-c27=""
+      d="m38.5,45.57H8.83c-3.25-3.25-5.08-5.08-8.33-8.33V8.83C3.75,5.58,5.58,3.75,8.83.5h29.67c3.25,3.25,5.08,5.08,8.33,8.33v28.42c-3.25,3.25-5.08,5.08-8.33,8.33Z"
+      class="cls-1"></path>
+    <g _ngcontent-xpj-c13="" _ngcontent-hld-c27="">
+      <line _ngcontent-xpj-c13="" _ngcontent-hld-c27="" x1="16.38" y1="15.75" x2="30.95" y2="30.32" class="cls-1">
+      </line>
+      <line _ngcontent-xpj-c13="" _ngcontent-hld-c27="" x1="30.95" y1="15.75" x2="16.38" y2="30.32" class="cls-1">
+      </line>
+    </g>
+  </g>
+</svg>
